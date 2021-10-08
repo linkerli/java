@@ -1,0 +1,28 @@
+.tab-bar-container {
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  width: 120px;
+  height: 270px;
+  border-radius: 75px;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  backdrop-filter: blur(50px);
+}
+.tab-bar-container .tab-bar-item {
+  width: 50px;
+  height: 50px;
+  padding: 35px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 20px 10px;
+}
+.tab-bar-container .tab-bar-item .tab-bar-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

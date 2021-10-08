@@ -1,0 +1,89 @@
+.input-read-code-container {
+  position        : absolute;
+  top             : 0;
+  bottom          : 0;
+  left            : 0;
+  right           : 0;
+  z-index         : 9999;
+  background-color: rgba(0, 0, 0, .45);
+
+  .input-read-code-modal {
+    position        : absolute;
+    left            : 50%;
+    top             : 50%;
+    transform       : translate(-50%, -50%);
+    transition      : transform 2s ease-in-out;
+    width           : 630 - 140px;
+    padding         : 90px 70px;
+    border-radius   : 30px;
+    background-color: white;
+
+    .input-read-code-title {
+      display   : block;
+      width     : 100%;
+      text-align: center;
+      font-size : 34px;
+      color     : #000;
+    }
+
+    .read-code-input {
+      display         : block;
+      padding         : 0 30px;
+      width           : 435px;
+      height          : 95px;
+      border-radius   : 55px;
+      background-color: #EEEEEE;
+      margin-top      : 70px;
+    }
+
+    .read-code-input.placeholder {
+      font-size: 34px;
+    }
+
+    .read-code-button {
+      display         : block;
+      width           : 495px;
+      height          : 95px;
+      line-height     : 95px;
+      border-radius   : 55px;
+      margin-top      : 30px;
+      background-color: rgba(0, 0, 0, .85);
+      font-size       : 34px;
+      color           : white;
+      text-align      : center;
+    }
+
+    .read-code-cancel-button {
+      display         : block;
+      width           : 495px;
+      height          : 95px;
+      line-height     : 95px;
+      border-radius   : 55px;
+      margin-top      : 30px;
+      font-size       : 34px;
+      background-color: transparent;
+      border          : none;
+      outline         : none;
+      color           : #949494;
+      text-align      : center;
+    }
+
+    .read-code-linear {
+      margin: 45px 0 20px;
+    }
+
+    .read-code-tips {
+      display       : block;
+      font-size     : 23px;
+      font-weight   : 500;
+      color         : #949494;
+      line-height   : 30px;
+      letter-spacing: 1px;
+      text-align    : center;
+    }
+
+    .read-code-cancel-button::after {
+      display: none;
+    }
+  }
+}

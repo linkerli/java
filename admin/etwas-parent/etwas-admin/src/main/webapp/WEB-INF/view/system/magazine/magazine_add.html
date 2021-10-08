@@ -1,0 +1,43 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal" id="magazineInfoForm">
+
+            <div class="row">
+                <div class="col-sm-12 b-r">
+                            <#input id="title" name="杂志名称" underline="true"/>
+                            <#input id="issue" name="出版号" underline="true"/>
+                    <#input id="itemDesc" name="介绍（60字内）" underline="true" />
+                    <#select id="status" name="发布状态" underline="true">
+                    <option value="1">未发布</option>
+                    <option value="2">已发布</option>
+                    </#select>
+
+                    <#input id="h5Path" name="H5链接" underline="true"/>
+
+                    <#input id="initReadCount" name="初始订阅量" underline="true"/>
+                <#input id="price" name="单本价格" underline="true" />
+                </div>
+                <div class="col-sm-12">
+                    <#avatar id="itemCover" name="杂志封面(748*989)" underline="true" progressBarId="progressBarItemCover"/>
+                    <#MutiAvatar id="itemPreviewPic" name="杂志预览图(750*1624)" underline="true" rogressBarId="progressBarPicMuti"/>
+                    <#fileZip id="h5SourceZip" progressBarId="progressBarZip" name="H5zip包" underline="true"/>
+
+                    <#avatar id="rankIntroPic" name="排行榜封面图(1000*600)" underline="true" progressBarId="progressBarRankIntroPic"/>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="MagazineInfoDlg.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="MagazineInfoDlg.close()"/>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/magazine/magazine_info.js"></script>
+@}

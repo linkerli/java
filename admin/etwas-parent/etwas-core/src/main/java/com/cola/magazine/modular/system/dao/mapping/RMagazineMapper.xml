@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cola.magazine.modular.system.dao.RMagazineMapper">
+
+    <resultMap id="BaseResultMap" type="com.cola.magazine.modular.system.model.RMagazine">
+        <id column="id" property="id" />
+        <result column="title" property="title" />
+        <result column="category_id" property="categoryId" />
+        <result column="category_name" property="categoryName" />
+        <result column="person_type" property="personType" />
+        <result column="person_type_name" property="personTypeName" />
+        <result column="H5_path" property="h5Path" />
+        <result column="rank_intro_pic" property="rankIntroPic" />
+        <result column="is_open_rank_list" property="isOpenRankList" />
+        <result column="is_recommend" property="isRecommend" />
+        <result column="year" property="year" />
+        <result column="issue" property="issue" />
+        <result column="item_cover" property="itemCover" />
+        <result column="item_preview_pic" property="itemPreviewPic" />
+        <result column="init_read_count" property="initReadCount" />
+        <result column="read_count" property="readCount" />
+        <result column="h5_source_zip" property="h5SourceZip" />
+        <result column="item_desc" property="itemDesc" />
+        <result column="status" property="status" />
+        <result column="pre_small_code" property="preSmallCode" />
+        <result column="up_date" property="upDate" />
+        <result column="price" property="price" />
+        <result column="valid" property="valid" />
+        <result column="create_date" property="createDate" />
+        <result column="modify_date" property="modifyDate" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id, title, category_id, category_name, person_type, person_type_name, H5_path, rank_intro_pic, is_open_rank_list, is_recommend, year, issue, item_cover, item_preview_pic, init_read_count, read_count, h5_source_zip, item_desc, status, pre_small_code, up_date, price, valid, create_date, modify_date
+    </sql>
+
+    <update id="updateRMagazineReadCount">
+        UPDATE r_magazine set read_count = read_count + #{readCount} WHERE id=#{id}
+    </update>
+
+</mapper>

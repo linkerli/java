@@ -1,0 +1,124 @@
+.detail-container {
+  position: absolute;
+  top     : 0;
+  bottom  : 0;
+  left    : 0;
+  right   : 0;
+
+  .detail-swiper-container {
+    position: absolute;
+    top     : 0;
+    bottom  : 0;
+    left    : 0;
+    right   : 0;
+
+    .swiper-cover {
+      pointer-events: none;
+      position      : absolute;
+      top           : 0;
+      bottom        : 0;
+      left          : 0;
+      right         : 0;
+      background    : linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .5) 100%);
+    }
+
+    .swiper {
+      width : 100%;
+      height: 100%;
+
+      .swiper-item-image {
+        display: block;
+        width  : 100%;
+        height : 100%;
+      }
+    }
+  }
+
+  .detail-cover {
+    position: absolute;
+    left    : 0;
+    right   : 0;
+    bottom  : 100px;
+
+    .detail-name {
+      display    : block;
+      padding    : 0 60px 70px;
+      font-size  : 42px;
+      font-weight: bold;
+      color      : white;
+    }
+
+    .detail-desc {
+      display  : block;
+      padding  : 0 60px 70px;
+      font-size: 27px;
+      color    : white;
+    }
+
+    .detail-info-container {
+      display        : flex;
+      flex-direction : row;
+      justify-content: space-between;
+      padding        : 0 200px 90px 60px;
+
+      .detail-info-sub {
+        font-size: 27px;
+        color    : white;
+      }
+
+      .detail-info-navigator {
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        padding-right  : 40px;
+        position       : relative;
+
+        .detail-info-navigator-text {
+          font-size: 27px;
+          color    : white;
+        }
+
+        .next-icon-container {
+          position : absolute;
+          right    : 0;
+          top      : 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    .detail-buttons-container {
+      display        : flex;
+      flex-direction : row;
+      justify-content: space-between;
+      padding        : 0 60px;
+
+      .share-button {
+        position        : relative;
+        width           : 112px;
+        height          : 112px;
+        border-radius   : 56px;
+        outline         : none;
+        border          : none;
+        padding         : 0;
+        margin          : 0;
+        background-color: white;
+        box-shadow      : rgba(0, 0, 0, .1) 0 0 20px 0;
+        display         : block;
+
+        .share-button-share-icon {
+          width    : 35%;
+          position : absolute;
+          left     : 50%;
+          top      : 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .share-button::after {
+        display: none;
+      }
+    }
+  }
+
+}

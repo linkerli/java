@@ -1,0 +1,152 @@
+.loading {
+  position : fixed;
+  left     : 50%;
+  top      : 50%;
+  transform: translate(-50%, -50%);
+  display  : none;
+}
+
+.loading img {
+  display: block;
+  width  : 100px;
+  margin : 0 auto 10px;
+}
+
+.loading .weui-loadmore__tips {
+  display: block;
+}
+
+
+.content {
+  padding: 0 .5rem;
+}
+
+.content .logo {
+  display: block;
+  width  : 3.27rem;
+  margin : .56rem 0 .68rem;
+}
+
+.item-row {
+  display        : flex;
+  flex-direction : row;
+  justify-content: start;
+}
+
+.item {
+  padding       : 0;
+  padding-bottom: .84rem;
+}
+
+.weui-grid:after,
+.weui-grid:before,
+.weui-grids::before,
+.weui-grids::after {
+  display: none;
+}
+
+.item .item-image {
+  width     : 4.35rem;
+  height    : 5.6rem;
+  background: red;
+}
+
+.item .item-time {
+  display    : block;
+  font-size  : .3rem;
+  line-height: 1;
+  color      : #989898;
+  margin     : .21rem 0 .42rem;
+}
+
+.item .item-name {
+  display    : block;
+  font-size  : .41rem;
+  font-weight: bold;
+  color      : #000;
+  line-height: 1;
+}
+
+.item .item-detail {
+  display    : block;
+  line-height: 1;
+  font-size  : .31rem;
+  color      : #000;
+  margin     : .38rem 0;
+}
+
+.item .item-detail.bold {
+  font-weight: bold;
+  margin     : 0;
+}
+
+.nomore {
+  width        : 50%;
+  margin       : 1.3333333333rem auto;
+  border-bottom: 1px solid #cdcdcd;
+  line-height  : 1;
+  text-align   : center;
+  color        : #8c8c8c;
+}
+
+.nomore span {
+  padding    : 0 20px;
+  position   : relative;
+  background : #fff;
+  font-size  : .32rem;
+  line-height: 1;
+  top        : .16rem;
+}
+
+.modal-background {
+  position  : fixed;
+  left      : 0;
+  right     : 0;
+  top       : 0;
+  bottom    : 0;
+  background: rgba(0, 0, 0, .5);
+  z-index   : 999;
+  display   : none;
+}
+
+.modal {
+  position        : absolute;
+  left            : 50%;
+  top             : 50%;
+  transform       : translate(-50%, -50%);
+  width           : 7rem;
+  padding         : 0 .3rem;
+  border-radius   : .3rem;
+  background-color: #fff;
+}
+
+.modal-logo {
+  display: block;
+  width  : 2.65rem;
+  margin : 1.6rem auto 1.45rem;
+}
+
+.modal-title {
+  text-align   : center;
+  font-size    : .41rem;
+  color        : #000;
+  margin-bottom: 1.5rem;
+}
+
+.modal-confirm {
+  display      : block;
+  width        : 5rem;
+  height       : 1.14rem;
+  border-radius: .6rem;
+  border       : none;
+  outline      : none;
+  font-size    : .41rem;
+  line-height  : 1.14rem;
+  text-align   : center;
+  margin       : 0 auto 1.4rem;
+}
+
+.modal-confirm {
+  background: #000;
+  color     : #fff;
+}

@@ -1,0 +1,9 @@
+.more-icon-container {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-image: url(../../../assets/images/next-icon.png);
+  background-position: center;
+  background-size: contain;
+}

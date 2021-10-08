@@ -1,0 +1,52 @@
+.my-code-item-container {
+  padding        : 40px 42px 40px 52px;
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-between;
+
+  .code {
+    width           : 365px;
+    height          : 74px;
+    border-radius   : 10px;
+    padding         : 10px 30px;
+    background-color: #EEEEEE;
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-between;
+
+    .code-text {
+      font-size  : 30px;
+      line-height: 74px;
+      color      : #000;
+    }
+
+    .code-text-invalid {
+      font-size  : 30px;
+      line-height: 74px;
+      color      : #B7B7B7;
+    }
+
+    .code-status {
+      font-size  : 25px;
+      line-height: 74px;
+      color      : #B7B7B7;
+    }
+  }
+
+  .my-code-copy-button,
+  .my-code-share-button {
+    height          : 60px;
+    line-height     : 60px;
+    border-radius   : 30px;
+    font-size       : 36px;
+    text-align      : center;
+    margin-top      : 17px;
+    background-color: #000;
+    color           : #fff;
+  }
+
+  .my-code-copy-button.invalid-button,
+  .my-code-share-button.invalid-button {
+    background-color: #B7B7B7;
+  }
+}

@@ -1,0 +1,112 @@
+.detail-container {
+  position: absolute;
+  top     : 0;
+  bottom  : 0;
+  left    : 0;
+  right   : 0;
+
+  .detail-swiper-container {
+    position: absolute;
+    top     : 0;
+    bottom  : 0;
+    left    : 0;
+    right   : 0;
+
+    .swiper {
+      width : 100%;
+      height: 100%;
+
+      .swiper-item-image {
+        display: block;
+        width  : 100%;
+        height : 100%;
+      }
+    }
+  }
+
+  .detail-name {
+    position : absolute;
+    left     : 0;
+    right    : 0;
+    bottom   : 600px;
+    padding  : 0 60px;
+    font-size: 60px;
+    color    : white;
+  }
+
+  .detail-desc {
+    position : absolute;
+    left     : 0;
+    right    : 0;
+    bottom   : 400px;
+    padding  : 0 60px;
+    font-size: 36px;
+    color    : white;
+  }
+
+  .detail-info-container {
+    position       : absolute;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    padding        : 0 200px 0 60px;
+    left           : 0;
+    right          : 0;
+    bottom         : 300px;
+
+    .detail-info-sub {
+      font-size: 36px;
+      color    : white;
+    }
+
+    .detail-info-navigator {
+      display        : flex;
+      flex-direction : row;
+      justify-content: space-between;
+
+      .detail-info-navigator-text {
+        font-size: 36px;
+        color    : white;
+      }
+
+      .next-icon-container {
+        padding-top : 14px;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .detail-buttons-container {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    padding        : 0 60px;
+    position       : absolute;
+    left           : 0;
+    right          : 0;
+    bottom         : 100px;
+
+    .share-button {
+      display   : block;
+      width     : 120px;
+      height    : 120px;
+      outline   : none;
+      border    : none;
+      padding   : 0;
+      margin    : 0;
+      background: none;
+
+      .share-button-share-icon {
+        display: block;
+        width  : 100%;
+        height : 100%;
+      }
+    }
+
+    .share-button::after {
+      display         : none;
+      border          : 1px solid red;
+      background-color: red;
+    }
+  }
+}

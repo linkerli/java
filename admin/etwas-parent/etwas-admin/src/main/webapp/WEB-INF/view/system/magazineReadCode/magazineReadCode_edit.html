@@ -1,0 +1,38 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="id" name="主键" value="${item.id}" underline="true"/>
+                            <#input id="magId" name="杂志id" value="${item.magId}" underline="true"/>
+                            <#input id="magTitle" name="杂志标题" value="${item.magTitle}" underline="true"/>
+                            <#input id="sourceType" name="阅读码产生来源（1：系统管理员生成 2：用户购买）" value="${item.sourceType}" underline="true"/>
+                            <#input id="sourceId" name="阅读码产生来源（2：用户购买 r_magazine_order的主键 ）" value="${item.sourceId}" underline="true"/>
+                            <#input id="readCode" name="阅读码" value="${item.readCode}" underline="true"/>
+                            <#input id="status" name="阅读码状态（1：未激活 2已激活）" value="${item.status}" />
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="activiteTime" name="激活时间" value="${item.activiteTime}" underline="true"/>
+                            <#input id="usedUserId" name="使用用户" value="${item.usedUserId}" underline="true"/>
+                            <#input id="buyUserId" name="购买使用用户" value="${item.buyUserId}" underline="true"/>
+                            <#input id="valid" name="是否有效业务(1:有效 0无效)" value="${item.valid}" underline="true"/>
+                            <#input id="createDate" name="" value="${item.createDate}" underline="true"/>
+                            <#input id="modifyDate" name="" value="${item.modifyDate}" />
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="MagazineReadCodeInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="MagazineReadCodeInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/magazineReadCode/magazineReadCode_info.js"></script>
+@}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cola.magazine.modular.system.dao.RMagazineReadCodeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cola.magazine.modular.system.model.RMagazineReadCode">
+        <id column="id" property="id" />
+        <result column="mag_id" property="magId" />
+        <result column="mag_title" property="magTitle" />
+        <result column="source_type" property="sourceType" />
+        <result column="source_id" property="sourceId" />
+        <result column="read_code" property="readCode" />
+        <result column="status" property="status" />
+        <result column="activite_time" property="activiteTime" />
+        <result column="used_user_id" property="usedUserId" />
+        <result column="used_user_name" property="usedUserName" />
+        <result column="used_user_pic" property="usedUserPic" />
+        <result column="buy_user_id" property="buyUserId" />
+        <result column="buy_user_name" property="buyUserName" />
+        <result column="buy_user_pic" property="buyUserPic" />
+        <result column="remark" property="remark" />
+        <result column="valid" property="valid" />
+        <result column="create_date" property="createDate" />
+        <result column="modify_date" property="modifyDate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, mag_id, mag_title, source_type, source_id, read_code, status, activite_time, used_user_id, used_user_name, used_user_pic, buy_user_id, buy_user_name, buy_user_pic, remark, valid, create_date, modify_date
+    </sql>
+
+</mapper>

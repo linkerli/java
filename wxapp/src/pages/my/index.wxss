@@ -1,0 +1,221 @@
+page {
+  background: #F2F2F2;
+}
+button::after {
+  border: none;
+}
+.my-container .my-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 200px 50px 50px;
+  background: white;
+}
+.my-container .my-top .my-top-name .my-name {
+  display: block;
+  font-size: 42px;
+  color: #000;
+}
+.my-container .my-top .my-avatar-container .my-avatar {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background-image: url(../../../assets/images/default-avatar.png);
+  background-position: center;
+  background-size: contain;
+  overflow: hidden;
+}
+.my-container .my-top .my-avatar-container .my-avatar .user-avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.my-container .my-top .my-avatar-container .edit-my-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 20px;
+}
+.my-container .my-top .my-avatar-container .edit-my-name .edit-my-name-text {
+  font-size: 25px;
+  color: #B6B6B6;
+}
+.my-container .my-top .my-avatar-container .edit-my-name .edit-icon {
+  display: block;
+  width: 22px;
+  height: 25px;
+  margin-left: 10px;
+}
+.my-container .index-hot-list {
+  border-radius: 38px 38px 0 0;
+  padding: 60px 20px;
+  background-color: #F2F2F2;
+  transform: translateY(-10px);
+}
+.my-container .index-hot-list .no-sub {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px 1300px;
+  background-color: #F2F2F2;
+}
+.my-container .index-hot-list .no-sub .no-sub-linear {
+  width: 200px;
+  height: 1px;
+  background-color: #D8D8D8;
+}
+.my-container .index-hot-list .no-sub .no-sub-text {
+  font-size: 25px;
+  color: #9F9F9F;
+}
+.my-container .index-hot-list .index-hot-title {
+  display: block;
+  text-align: center;
+  font-size: 34px;
+  color: black;
+  padding: 20px;
+}
+.my-container .index-hot-list .index-hot-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.my-container .index-hot-list .index-hot-row .index-hot-item {
+  margin: 20px;
+}
+.my-container .index-hot-list .index-hot-row .index-hot-item .index-hot-item-image {
+  width: 362px;
+  height: 476px;
+  border-radius: 10px;
+}
+.my-container .index-hot-list .index-hot-row .index-hot-item .index-hot-item-image image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.my-container .index-hot-list .index-hot-row .index-hot-item .index-hot-item-name {
+  display: block;
+  font-size: 34px;
+  font-weight: bold;
+  color: black;
+  line-height: 2;
+  margin-top: 30px;
+}
+.my-container .index-hot-list .index-hot-row .index-hot-item .index-hot-item-des {
+  display: block;
+  font-size: 25px;
+  color: #9F9F9F;
+  line-height: 2;
+  margin-top: 20px;
+}
+.my-container .index-hot-list .index-hot-row .index-hot-item .index-hot-item-button {
+  display: inline-block;
+  padding: 0 30px;
+  border-radius: 32px;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  outline: none;
+  border: none;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 12px 0;
+  font-size: 25px;
+  color: #fff;
+  margin-top: 20px;
+}
+.my-container .index-hot-list .index-hot-row .index-hot-item .index-hot-item-button::after {
+  display: none;
+}
+.my-container .services {
+  position: fixed;
+  right: 42px;
+  bottom: 350px;
+}
+.my-container .services .services-button {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  display: block;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.my-container .services .services-button .services-button-image {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.my-container .services .services-button::afeter,
+.my-container .services .services-button::before {
+  display: none;
+  border: none;
+}
+.my-container .edit-nick-name-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.my-container .edit-nick-name-modal .login-modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 2s ease-in-out;
+  width: 490px;
+  padding: 90px 70px;
+  border-radius: 30px;
+  background-color: white;
+}
+.my-container .edit-nick-name-modal .login-modal .logo {
+  display: block;
+  width: 220px;
+  height: 50px;
+  margin: 0 auto;
+}
+.my-container .edit-nick-name-modal .login-modal .login-tips {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 34px;
+  color: #000;
+  margin: 120px 0;
+}
+.my-container .edit-nick-name-modal .login-modal .login-button {
+  display: block;
+  width: 495px;
+  height: 95px;
+  line-height: 95px;
+  border-radius: 55px;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  font-size: 34px;
+  color: white;
+  text-align: center;
+}
+.my-container .edit-nick-name-modal .login-modal .login-cancel-button {
+  display: block;
+  width: 495px;
+  height: 95px;
+  line-height: 95px;
+  border-radius: 55px;
+  margin-top: 30px;
+  font-size: 34px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #949494;
+  text-align: center;
+}
+.my-container .edit-nick-name-modal .login-modal .login-cancel-button::after {
+  display: none;
+}

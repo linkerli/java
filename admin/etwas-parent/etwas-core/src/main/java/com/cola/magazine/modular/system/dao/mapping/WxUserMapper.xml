@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cola.magazine.modular.system.dao.WxUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cola.magazine.modular.system.model.WxUser">
+        <id column="id" property="id" />
+        <result column="unionId" property="unionId" />
+        <result column="user_nick_name" property="userNickName" />
+        <result column="user_head_pic" property="userHeadPic" />
+        <result column="gender" property="gender" />
+        <result column="language" property="language" />
+        <result column="city" property="city" />
+        <result column="province" property="province" />
+        <result column="country" property="country" />
+        <result column="status" property="status" />
+        <result column="valid" property="valid" />
+        <result column="create_date" property="createDate" />
+        <result column="modify_date" property="modifyDate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, unionId, user_nick_name, user_head_pic, gender, language, city, province, country, status, valid, create_date, modify_date
+    </sql>
+
+</mapper>

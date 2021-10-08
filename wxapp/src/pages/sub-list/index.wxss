@@ -1,0 +1,32 @@
+.sub-list-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  filter: blur(50px);
+}
+.sub-list-container .sub-list-tips {
+  width: 720px;
+  height: 430px;
+  margin: 200px auto 70px;
+  background-color: #EDEDED;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.sub-list-container .sub-list-tips .tips-image {
+  display: block;
+  width: 100%;
+}
+.sub-list-container .sub-list-top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 50px 30px;
+}
+.sub-list-container .sub-list-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px 30px;
+}

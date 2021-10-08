@@ -1,0 +1,51 @@
+@layout("/common/_container.html"){
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>杂志阅读码管理管理</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <#NameCon id="magaTitle" name="杂志标题" />
+                            </div>
+                            <div class="col-sm-3">
+                                <#NameCon id="remark" name="备注" />
+                            </div>
+                            <div class="col-sm-2">
+                                <#SelectCon id="status" name="激活状态" >
+                                <option value="">不限</option>
+                                <option value="1">未激活</option>
+                                <option value="2">已激活</option>
+                                </#SelectCon>
+                            </div>
+                            <div class="col-sm-2">
+                                <#SelectCon id="sourceType" name="来源" >
+                                <option value="">不限</option>
+                                <option value="1">系统生成</option>
+                                <option value="2">公众号购买</option>
+                                <option value="3">小程序购买</option>
+                                <option value="3">抖音购买</option>
+                                </#SelectCon>
+                            </div>
+                            <div class="col-sm-2">
+                                <#button name="搜索" icon="fa-search" clickFun="MagazineReadCode.search()"/>
+                            </div>
+                        </div>
+                        <div class="hidden-xs" id="MagazineReadCodeTableToolbar" role="group">
+                            @if(shiro.hasPermission("/magazineReadCode/delete")){
+                                <#button name="删除" icon="fa-remove" clickFun="MagazineReadCode.delete()" space="true"/>
+                            @}
+                        </div>
+                        <#table id="MagazineReadCodeTable"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/magazineReadCode/magazineReadCode.js"></script>
+@}

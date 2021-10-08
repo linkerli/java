@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ETWAS</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/weui.css">
+  <link rel="stylesheet" href="./css/my.css">
+  <script src="./js/flexible.js"></script>
+</head>
+
+<body>
+
+  <!-- 正在加载中 -->
+  <div class="loading weui-loadmore">
+    <img src="./images/logo.png" />
+    <span class="weui-loadmore__tips">正在加载</span>
+  </div>
+
+  <!-- 主体内容 -->
+  <div class="content">
+
+    <div class="top-container">
+      <div class="top-names">
+        <div class="top-name">Hi,</div>
+        <div class="top-name name">用户名显示</div>
+      </div>
+
+      <div class="top-avatar">
+        <div class="avatar"></div>
+      </div>
+    </div>
+
+    <div class="list-container">
+      <p class="list-title">订阅记录</p>
+
+      <div id="sub-list-container"></div>
+
+      <p class="nomore text-center hide"><span>暂无订阅记录</span></p>
+
+    </div>
+
+  </div>
+
+  <!-- 购买阅读码的弹层 -->
+  <div class="modal-background">
+    <div class="modal">
+      <p class="modal-title">前往小程序阅读</p>
+
+      <img class="modal-img" src="" />
+
+      <button class="modal-cancel">取消</button>
+
+    </div>
+  </div>
+
+  <!-- 底部导航条按钮 -->
+  <div class="tabbar">
+    <div class="tabbar-item to-home">
+      <img src="./images/home-unselected-icon.png" />
+    </div>
+    <div class="tabbar-item">
+      <img src="./images/my-selected-icon.png" />
+    </div>
+  </div>
+
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/jquery-weui.js"></script>
+  <script src="//res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+  <script src="//res.wx.qq.com/open/libs/weuijs/1.2.1/weui.min.js"></script>
+  <script src="./js/axios.min.js"></script>
+  <script src="./js/http.js"></script>
+  <script src="./js/my.js"></script>
+</body>
+
+
+</html>

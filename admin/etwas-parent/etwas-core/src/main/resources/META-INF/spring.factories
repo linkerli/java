@@ -1,0 +1,6 @@
+# AutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.cola.magazine.core.base.controller.GlobalController,\
+com.cola.magazine.core.config.DefaultFastjsonConfig,\
+com.cola.magazine.core.config.DefaultProperties,\
+com.cola.magazine.core.config.DefaultWebConfig

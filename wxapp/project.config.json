@@ -1,0 +1,64 @@
+{
+  "miniprogramRoot": "dist/",
+  "projectname": "ETWAS",
+  "description": "",
+  "appid": "wx322d222ddf831ddf",
+  "setting": {
+    "urlCheck": false,
+    "es6": false,
+    "postcss": false,
+    "preloadBackgroundData": false,
+    "minified": false,
+    "newFeature": true,
+    "coverView": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/detail/index",
+          "pathName": "pages/detail/index",
+          "query": "magId=7&userNickName=123123123&userHeadPic=https%3A%2F%2Fstatic.etwas.cn%2Fuser%2Flogo%2F671c22168cc8-46dd-89cc-2b9cb614dca2&readCode=VJXU24XF",
+          "scene": null
+        },
+        {
+          "name": "pages/detail/index",
+          "pathName": "pages/detail/index",
+          "query": "magId=8&userNickName=123123123&userHeadPic=https%3A%2F%2Fstatic.etwas.cn%2Fuser%2Flogo%2F671c22168cc8-46dd-89cc-2b9cb614dca2&readCode=MCWKHMM3",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

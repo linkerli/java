@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cola.magazine.modular.system.dao.WxCallbackInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cola.magazine.modular.system.model.WxCallbackInfo">
+        <id column="id" property="id" />
+        <result column="back_data" property="backData" />
+        <result column="back_time" property="backTime" />
+        <result column="appid" property="appid" />
+        <result column="much_id" property="muchId" />
+        <result column="nonce_str" property="nonceStr" />
+        <result column="sign" property="sign" />
+        <result column="result_code" property="resultCode" />
+        <result column="openid" property="openid" />
+        <result column="is_subscribe" property="isSubscribe" />
+        <result column="trade_type" property="tradeType" />
+        <result column="bank_type" property="bankType" />
+        <result column="total_fee" property="totalFee" />
+        <result column="cash_fee" property="cashFee" />
+        <result column="transaction_id" property="transactionId" />
+        <result column="out_trade_no" property="outTradeNo" />
+        <result column="time_end" property="timeEnd" />
+        <result column="attach" property="attach" />
+        <result column="return_code" property="returnCode" />
+        <result column="return_msg" property="returnMsg" />
+        <result column="err_code" property="errCode" />
+        <result column="err_code_des" property="errCodeDes" />
+        <result column="device_info" property="deviceInfo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, back_data, back_time, appid, much_id, nonce_str, sign, result_code, openid, is_subscribe, trade_type, bank_type, total_fee, cash_fee, transaction_id, out_trade_no, time_end, attach, return_code, return_msg, err_code, err_code_des, device_info
+    </sql>
+
+</mapper>

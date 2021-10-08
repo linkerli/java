@@ -1,5 +1,7 @@
 # Compiled class file
 *.class
+/wxapp/node_modules
+/wxapp/dist
 
 # Log file
 *.log

@@ -1,0 +1,49 @@
+.sub-list-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+  line-height: 90px;
+}
+.sub-list-item-container .sub-list-item-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.sub-list-item-container .sub-list-item-left .sub-list-item-index {
+  font-size: 42px;
+  color: #C6C6C6;
+}
+.sub-list-item-container .sub-list-item-left .avatar-container {
+  width: 90px;
+  height: 90px;
+  background-image: url(../../../../../assets/images/default-avatar.png);
+  background-position: center;
+  background-size: contain;
+  margin: 0 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.sub-list-item-container .sub-list-item-left .avatar-container .default-avatar {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../../../assets/images/default-avatar.png);
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.sub-list-item-container .sub-list-item-left .avatar-container .default-avatar .avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.sub-list-item-container .sub-list-item-left .name {
+  display: block;
+  font-size: 33px;
+  color: #000;
+}
+.sub-list-item-container .count {
+  font-size: 25px;
+  color: #000;
+}

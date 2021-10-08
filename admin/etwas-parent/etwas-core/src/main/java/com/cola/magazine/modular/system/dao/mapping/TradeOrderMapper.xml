@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cola.magazine.modular.system.dao.TradeOrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cola.magazine.modular.system.model.TradeOrder">
+        <id column="id" property="id" />
+        <result column="order_code" property="orderCode" />
+        <result column="order_name" property="orderName" />
+        <result column="user_id" property="userId" />
+        <result column="user_nick_name" property="userNickName" />
+        <result column="user_head_pic" property="userHeadPic" />
+        <result column="source_type" property="sourceType" />
+        <result column="source_id" property="sourceId" />
+        <result column="source_num" property="sourceNum" />
+        <result column="total_money" property="totalMoney" />
+        <result column="pay_money" property="payMoney" />
+        <result column="actual_money" property="actualMoney" />
+        <result column="pay_type" property="payType" />
+        <result column="channel_type" property="channelType" />
+        <result column="status" property="status" />
+        <result column="close_reason" property="closeReason" />
+        <result column="out_order_code" property="outOrderCode" />
+        <result column="pay_success_date" property="paySuccessDate" />
+        <result column="close_date" property="closeDate" />
+        <result column="create_date" property="createDate" />
+        <result column="version_no" property="versionNo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, order_code, order_name, user_id, user_nick_name, user_head_pic, source_type, source_id, source_num, total_money, pay_money, actual_money, pay_type, channel_type, status, close_reason, out_order_code, pay_success_date, close_date, create_date, version_no
+    </sql>
+
+</mapper>
