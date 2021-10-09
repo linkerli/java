@@ -64,7 +64,7 @@
         height: auto;
 
         &.translateX-left-transition {
-          transform: translateX(-150px);
+          transform: translateX(150px);
           transition: transform 1s linear;
 
           &.show {

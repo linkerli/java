@@ -181,7 +181,7 @@
         >
         </Page_14>
       </swiper-slide>
-      <swiper-slide>
+      <!-- <swiper-slide>
         <Page_14After
           v-if="(currentIndex >= 12)"
           @nextSwiperSlide="nextSwiperSlide"
@@ -191,12 +191,12 @@
           @showDownloadModal="showDownloadModal"
         >
         </Page_14After>
-      </swiper-slide>
+      </swiper-slide> -->
       <swiper-slide>
         <Page_15
-          v-if="(currentIndex >= 13)"
+          v-if="(currentIndex >= 12)"
           @nextSwiperSlide="nextSwiperSlide"
-          :show="currentIndex == 15"
+          :show="currentIndex == 14"
           :index="1"
           :currentIndex="currentIndex"
           @showDownloadModal="showDownloadModal"
@@ -206,9 +206,9 @@
 
       <swiper-slide>
         <Page_16
-          v-if="(currentIndex >= 14)"
+          v-if="(currentIndex >= 13)"
           @nextSwiperSlide="nextSwiperSlide"
-          :show="currentIndex == 16"
+          :show="currentIndex == 15"
           :index="1"
           :currentIndex="currentIndex"
           @showDownloadModal="showDownloadModal"
@@ -217,9 +217,9 @@
       </swiper-slide>
       <swiper-slide>
         <Page_17
-          v-if="(currentIndex >= 15)"
+          v-if="(currentIndex >= 14)"
           @nextSwiperSlide="nextSwiperSlide"
-          :show="currentIndex == 17"
+          :show="currentIndex == 16"
           :index="1"
           :currentIndex="currentIndex"
           @showDownloadModal="showDownloadModal"
@@ -228,9 +228,9 @@
       </swiper-slide>
       <swiper-slide>
         <Page_18
-          v-if="(currentIndex >= 16)"
+          v-if="(currentIndex >= 15)"
           @nextSwiperSlide="nextSwiperSlide"
-          :show="currentIndex == 18"
+          :show="currentIndex == 17"
           :index="1"
           :currentIndex="currentIndex"
           @showDownloadModal="showDownloadModal"
@@ -239,9 +239,9 @@
       </swiper-slide>
       <swiper-slide>
         <Page_19
-          v-if="(currentIndex >= 17)"
+          v-if="(currentIndex >= 16)"
           @nextSwiperSlide="nextSwiperSlide"
-          :show="currentIndex == 19"
+          :show="currentIndex == 18"
           :index="1"
           :currentIndex="currentIndex"
           @showDownloadModal="showDownloadModal"
@@ -250,9 +250,9 @@
       </swiper-slide>
       <swiper-slide>
         <Page_20
-          v-if="(currentIndex >= 18)"
+          v-if="(currentIndex >= 17)"
           @nextSwiperSlide="nextSwiperSlide"
-          :show="currentIndex == 20"
+          :show="currentIndex == 19"
           :index="1"
           :currentIndex="currentIndex"
           @showDownloadModal="showDownloadModal"
@@ -261,8 +261,8 @@
       </swiper-slide>
       <swiper-slide>
         <RollingPictures
-          v-if="(currentIndex >= 20)"
-          :show="currentIndex == 21"
+          v-if="(currentIndex >= 18)"
+          :show="currentIndex == 20"
           :index="1"
           :currentIndexOut="currentIndex"
           @showDownloadModal="showDownloadModal"
@@ -349,7 +349,7 @@ import Page_11 from "./Page_11.vue";
 import Page_12 from "./Page_12.vue";
 import Page_13 from "./Page_13.vue";
 import Page_14 from "./Page_14.vue";
-import Page_14After from "./Page_14_After.vue";
+// import Page_14After from "./Page_14_After.vue";
 import Page_15 from "./Page_15.vue";
 import Page_16 from "./Page_16.vue";
 import Page_17 from "./Page_17.vue";
@@ -388,7 +388,7 @@ export default {
     Page_12,
     Page_13,
     Page_14,
-    Page_14After,
+    // Page_14After,
     Page_15,
     Page_16,
     Page_17,
@@ -575,7 +575,7 @@ export default {
       // }
       this.swiper.slideTo(index + 1, 0, false);
       this.$data.currentIndex = index + 1;
-
+    
       if (index == 13) {
         this.$data.clickRollPage = true;
       } else {
