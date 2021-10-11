@@ -10,12 +10,7 @@
     <div :class="{'positioned': true, 'hide': hideVideo}">
       <img
         :src="page1LogoUrl"
-        style="position:absolute;top:0%;width:100%;left:0;z-index: 100;"
-      />
-      <img
-        :src="plays"
-        v-if="isShowPlay"
-        style="position:absolute;top:50%;width:30%;left:50%;z-index:101;transform:translate(-50%,-50%);"
+        style="position:absolute;top:2.55%;width:100%;left:0;z-index: 100;"
       />
       <video-player
         class="video-player-box"
@@ -76,15 +71,11 @@ export default {
     return {
       height: getHeight(),
       hideVideo: false,
-      intervalId: null,
-      isShowPlay: true,
       page1LogoUrl: require("../assets/images/page1_logo.png"),
       page1BgUrl: require("../assets/images/1_video_img.jpg"),
-      plays: require("../assets/images/plays.png"),
       playerOptions: {
         language: "en",
         autoplay: true,
-        // muted: true,
         preload: "auto",
         aspectRatio: "9:16",
         fluid: true,
@@ -167,24 +158,15 @@ export default {
           });
         });
       } else {
-        // const videoPlay = video.play();
-        // videoPlay !== undefined;
-        this.intervalId = window.setInterval(() => {
-          this.isInitial = false;
-          this.player.play();
-          this.$emit("videoReadyHandle");
-        }, 1000);
+        const videoPlay = video.play();
+        videoPlay !== undefined;
+        // window.setTimeout(() => {
+        //   this.isInitial = false;
+        //   this.player.play();
+        //   this.$emit("videoReadyHandle");
+        // }, 1000);
       }
     },
-    // play() {
-    //   console.log(666)
-    //   if (this.isInitial == true) {
-    //     setTimeout(() => {
-    //       clearInterval(this.intervalId);
-    //     }, 100)
-        
-    //   }
-    // },
     onPlayerEnded(player) {
       console.log("onPlayerEnded", player);
       this.$data.hideVideo = true;
@@ -209,9 +191,6 @@ export default {
           this.player.play();
           this.$emit("videoReadyHandle");
         }, 1000);
-      } else {
-        this.isShowPlay = false;
-        clearInterval(this.intervalId);
       }
     },
     onPlayerCanplay(player) {
