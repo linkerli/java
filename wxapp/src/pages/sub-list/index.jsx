@@ -110,7 +110,7 @@ export default class Index extends Component {
       title: '加载中',
     });
     const list = await getMagazineRankList(params.magId);
-    if (!list.code) {
+    if (!!list.code) {
       this.setState({
         list
       })

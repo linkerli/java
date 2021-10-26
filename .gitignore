@@ -2,6 +2,7 @@
 *.class
 *node_modules
 *dist
+h5/
 
 # Log file
 *.log

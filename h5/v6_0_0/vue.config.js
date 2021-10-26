@@ -1,6 +1,6 @@
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-    ? 'https://static.etwas.cn/magazine/19.5.0/'
+    ? 'https://static.etwas.cn/magazine/19.7.0/'
     : '/',
   // chainWebpack: config => {
   //   config.module
